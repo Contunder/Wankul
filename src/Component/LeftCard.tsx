@@ -18,8 +18,8 @@ function LeftCard() {
                 <Card.Title>Trier les cartes</Card.Title>
                 <Card.Text>
                     <RarityCardForm />
-                    <ArtistCardForm />
-                    <EffigyCardForm />
+                    {/*<ArtistCardForm />*/}
+                    {/*<EffigyCardForm />*/}
                 </Card.Text>
             </Card.Body>
         </Card>

@@ -11,10 +11,10 @@ let Collection: React.FC = () => {
 
     useEffect(() => {
         if (pageNumber) {
-            handleGetCollections().then(r => setCollections);
+            handleGetCollections().then(() => setCollections);
         }
         pageNumber = '0';
-        handleGetCollections().then(r => setCollections);
+        handleGetCollections().then(() => setCollections);
 
     }, []);
 
@@ -55,6 +55,7 @@ let Collection: React.FC = () => {
                                 onClick={() => removeToMyCollection(collection.cardNumber)}
                                 onClickCapture={() => collection.numberOfCard - 1}><b> - </b></button>
                         <button type="button" className="btn btn-light btn-sm">{collection.numberOfCard}</button>
+                        <button type="button" className="btn btn-secondary btn-sm">{collection.cardNumber}</button>
                     </div>
                     </>
                 ))}

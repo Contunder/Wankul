@@ -19,7 +19,7 @@ const UserCollectionForm = () => {
         <div className="mb-3">
             <Form onSubmit={submitHandler}>
                     <Form.Group controlId="form.id">
-                        <Form.Label>Utilisateur :</Form.Label>
+                        <Form.Label>Trier Par Utilisateur :</Form.Label>
                         <Form.Control type="text" value={enteredUser} onChange={userChangeHandler}
                                       placeholder="Pseudo"
                                       required/>

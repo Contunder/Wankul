@@ -11,7 +11,7 @@ function WankulNavbar() {
     return (
         <Navbar expand="lg" className="bg-black">
             <Container fluid>
-                <Navbar.Brand href="#">
+                <Navbar.Brand href="/">
                     <Image
                         src={"/Wankul_Logo_Blanc.webp"}
                         height='75'
