@@ -25,3 +25,12 @@ export const getCollectionByRarity= async (rarity: string|null): Promise<Collect
         throw error;
     }
 };
+
+export const getCollectionByUser = (username:String): Promise<CollectionListType> => {
+    return axios
+        .get((API_URL_COLLECTION+username), (headersConfig))
+        .then((response) => {
+            JSON.stringify(response.data)
+            return response.data;
+        });
+};

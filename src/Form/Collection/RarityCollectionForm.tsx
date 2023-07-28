@@ -16,6 +16,7 @@ const RarityCollectionForm = () => {
 
 
     return (
+        <div className="mb-3">
                 <Form>
                     <Form.Select aria-label="Rarety" className="mt-4" value={enteredRarity} onChange={rarityChangeHandler}>
                         <option>Trier Par Rareté</option>
@@ -30,6 +31,7 @@ const RarityCollectionForm = () => {
                         <option value="Legendaire Or">Légendaire Or</option>
                     </Form.Select>
                 </Form>
+        </div>
     );
 }
 export default RarityCollectionForm;

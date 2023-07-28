@@ -66,6 +66,12 @@
   left: 77px;
 }
 
+.img-holder .search {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
 .img-holder .btn-secondary {
   position: absolute;
   bottom: 10px;

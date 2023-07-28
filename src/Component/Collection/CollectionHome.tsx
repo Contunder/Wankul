@@ -11,7 +11,7 @@ function CollectionHome() {
             <WankulHeader/>
             <Container className="w-100">
                 <Row>
-                    <Col xxl={3}><LeftCollection /></Col>
+                    <Col xxl={3}><LeftCollection/></Col>
                     <Col xxl={9}><RightCollection /></Col>
                 </Row>
             </Container>
