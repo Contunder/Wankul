@@ -3,17 +3,25 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import WankulNavbar from "./Component/WankulNavbar";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import LoginForm from "./Form/Auth/LoginForm";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    document.getElementById('root') as HTMLElement
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+const queryParameters = new URLSearchParams(window.location.search);
+const login = queryParameters.get("login");
+
+root.render(
+    <React.StrictMode>
+        <WankulNavbar/>
+        <App/>
+        {login && (
+            <LoginForm/>
+        )}
+    </React.StrictMode>
+);
+
 reportWebVitals();
