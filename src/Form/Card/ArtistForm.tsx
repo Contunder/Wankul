@@ -1,14 +1,12 @@
 import Form from 'react-bootstrap/Form';
 import {useNavigate} from "react-router-dom";
-import React, {useState} from "react";
+import React from "react";
 
 function ArtistCardForm() {
 
     const navigate = useNavigate();
-    const [enteredArtist, setArtist] = useState('');
 
     const rarityChangeHandler = (event: { target: { value: React.SetStateAction<string>; }; }) => {
-        setArtist(event.target.value);
         navigate("?artist="+event.target.value);
         window.location.reload();
     };

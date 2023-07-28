@@ -1,15 +1,12 @@
 import Form from 'react-bootstrap/Form';
 import {useNavigate} from "react-router-dom";
-import React, {useState} from "react";
-import CardListSaison1 from "../../Component/Saison1";
+import React from "react";
 
 function EffigyCardForm() {
 
     const navigate = useNavigate();
-    const [enteredEffigy, setEffigy] = useState('');
 
     const effigyChangeHandler = (event: { target: { value: React.SetStateAction<string>; }; }) => {
-        setEffigy(event.target.value);
         navigate("?effigy="+event.target.value);
     };
 

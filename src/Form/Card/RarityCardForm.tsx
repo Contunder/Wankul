@@ -8,7 +8,7 @@ const RarityCardForm = () => {
     const [enteredRarity, setRarity] = useState('');
 
     const rarityChangeHandler = (event: { target: { value: React.SetStateAction<string>; }; }) => {
-        
+
         setRarity(event.target.value);
         navigate("/Search/Card?rarity="+event.target.value);
         window.location.reload();
@@ -17,7 +17,7 @@ const RarityCardForm = () => {
 
     return (
                 <Form>
-                    <Form.Select aria-label="Rarety" className="mt-4" value={enteredRarity} onChange={rarityChangeHandler}>
+                    <Form.Select aria-label="Rarity" className="mt-4" value={enteredRarity} onChange={rarityChangeHandler}>
                         <option>Trier Par Rareté</option>
                         <option value="Terrain">Terrain</option>
                         <option value="Commune">Commune</option>

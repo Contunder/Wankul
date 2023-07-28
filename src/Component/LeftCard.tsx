@@ -1,6 +1,6 @@
 import Card from 'react-bootstrap/Card';
 import Nav from 'react-bootstrap/Nav';
-import RaretyCardForm from "../Form/Card/RarityCardForm";
+import RarityCardForm from "../Form/Card/RarityCardForm";
 import EffigyCardForm from "../Form/Card/EffigyForm";
 import ArtistCardForm from "../Form/Card/ArtistForm";
 
@@ -17,7 +17,7 @@ function LeftCard() {
             <Card.Body>
                 <Card.Title>Trier les cartes</Card.Title>
                 <Card.Text>
-                    <RaretyCardForm />
+                    <RarityCardForm />
                     <ArtistCardForm />
                     <EffigyCardForm />
                 </Card.Text>
