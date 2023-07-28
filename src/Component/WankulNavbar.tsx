@@ -13,7 +13,7 @@ function WankulNavbar() {
             <Container fluid>
                 <Navbar.Brand href="#">
                     <Image
-                        src={"Wankul_Logo_Blanc.webp"}
+                        src={"/Wankul_Logo_Blanc.webp"}
                         height='75'
                         alt=''
                         loading='lazy'

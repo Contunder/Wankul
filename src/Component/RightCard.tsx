@@ -1,5 +1,5 @@
 import Card from 'react-bootstrap/Card';
-import Saison1 from "./Card/Saison1";
+import Saison1 from "./Saison1";
 
 function RightCard() {
     return (

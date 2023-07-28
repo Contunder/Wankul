@@ -1,7 +1,7 @@
 import Form from 'react-bootstrap/Form';
 import {useNavigate} from "react-router-dom";
 import React, {useState} from "react";
-import CardListSaison1 from "../../Component/Card/Saison1";
+import CardListSaison1 from "../../Component/Saison1";
 
 function EffigyCardForm() {
 

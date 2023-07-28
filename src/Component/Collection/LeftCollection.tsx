@@ -1,8 +1,6 @@
 import Card from 'react-bootstrap/Card';
 import Nav from 'react-bootstrap/Nav';
-import RaretyCardForm from "../../Form/Card/RarityCardForm";
-import ArtistCardForm from "../../Form/Card/ArtistForm";
-import EffigyCardForm from "../../Form/Card/EffigyForm";
+import RarityCollectionForm from "../../Form/Collection/RarityCollectionForm";
 
 function LeftCollection() {
     return (
@@ -17,9 +15,7 @@ function LeftCollection() {
             <Card.Body>
                 <Card.Title>Trier les cartes</Card.Title>
                 <Card.Text>
-                    <RaretyCardForm />
-                    <ArtistCardForm />
-                    <EffigyCardForm />
+                    <RarityCollectionForm />
                 </Card.Text>
             </Card.Body>
         </Card>

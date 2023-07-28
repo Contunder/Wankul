@@ -14,16 +14,6 @@ export const getAllCard= async (pageNumber: string | null): Promise<CardType> =>
     }
 };
 
-export const getAllCardByRarity = async (rarity: string | null): Promise<CardListType> => {
-    try {
-        const response = await axios.get(API_URL+"rarity/"+rarity+"?pageNo=0&pageSize=180&sortBy=id&sortDir=asc");
-        return response.data;
-    } catch (error) {
-        console.error(error);
-        throw error;
-    }
-};
-
 export const getAllCardByArtist = async (rarity: string | null): Promise<CardListType> => {
     try {
         const response = await axios.get(API_URL+"rarity/"+rarity+"?pageNo=0&pageSize=180&sortBy=id&sortDir=asc");

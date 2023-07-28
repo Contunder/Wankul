@@ -12,7 +12,7 @@ function WankulHeader() {
 
     return (
         <div className="mb-4">
-            <Video videoUrl={"header.mp4"} type={"video/mp4"} />
+            <Video videoUrl={"/header.mp4"} type={"video/mp4"} />
         </div>
     )
 

@@ -5,7 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import CollectionHome from "./Component/Collection/CollectionHome";
 import Home from "./Component/Home";
-import SearchCardHome from "./Component/Search/SearchCardHome";
+import SearchCardHome from "./Component/Search/Card/SearchCardHome";
+import SearchCollectionHome from "./Component/Search/Collection/SearchCollectionHome";
 
 export default function App() {
     return (
@@ -14,6 +15,7 @@ export default function App() {
                 <Route path="/" element={<Home/>} />
                 <Route path="/Collection" element={<CollectionHome/>} />
                 <Route path="/Search/Card" element={<SearchCardHome/>} />
+                <Route path="/Search/Collection" element={<SearchCollectionHome/>} />
             </Routes>
         </BrowserRouter>
     )

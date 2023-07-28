@@ -1,16 +1,15 @@
 import React, {useEffect} from "react";
-import CardListType from "../../Type/card.type";
-import {getAllCard} from "../../Service/card.service";
-import {getCurrentUser} from "../../Service/auth.service";
-import CollectionListType from "../../Type/collection.type";
-import {addMyCollection, getMyCollection, removeMyCollection} from "../../Service/collection.service";
+import CardListType from "../Type/card.type";
+import {getAllCard} from "../Service/card.service";
+import {getCurrentUser} from "../Service/auth.service";
+import CollectionListType from "../Type/collection.type";
+import {addMyCollection, getMyCollection, removeMyCollection} from "../Service/collection.service";
 
 let CardListSaison1: React.FC = () => {
 
     const queryParameters = new URLSearchParams(window.location.search);
     let [cards, setCards] = React.useState<CardListType>();
     let [collections, setCollections] = React.useState<CollectionListType>();
-
     let pageNumber = queryParameters.get("page");
 
     useEffect(() => {

@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Form} from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
-const RarityCardForm = () => {
+const RarityCollectionForm = () => {
 
     const navigate = useNavigate();
     const [enteredRarity, setRarity] = useState('');
@@ -10,7 +10,7 @@ const RarityCardForm = () => {
     const rarityChangeHandler = (event: { target: { value: React.SetStateAction<string>; }; }) => {
         
         setRarity(event.target.value);
-        navigate("/Search/Card?rarity="+event.target.value);
+        navigate("/Search/Collection?rarity="+event.target.value);
         window.location.reload();
     };
 
@@ -32,4 +32,4 @@ const RarityCardForm = () => {
                 </Form>
     );
 }
-export default RarityCardForm;
+export default RarityCollectionForm;
