@@ -1,28 +1,16 @@
-// @ts-ignore
-
 import React, {useEffect} from "react";
-import CardListType from "../../../Type/card.type";
 import CollectionListType from "../../../Type/collection.type";
 import {getCurrentUser} from "../../../Service/auth.service";
-import {addMyCollection, getMyCollection, removeMyCollection} from "../../../Service/collection.service";
-import {getCollectionByRarity, getCollectionByUser} from "../../../Service/search.service";
+import {getCollectionByUser} from "../../../Service/search.service";
 import Card from "react-bootstrap/Card";
 
 // @ts-ignore
 function SearchCollectionUser({user}) {
 
-    const queryParameters = new URLSearchParams(window.location.search);
     let [collections, setCollections] = React.useState<CollectionListType>();
-    let pageNumber = queryParameters.get("page");
 
     useEffect(() => {
-        if (pageNumber) {
-            handleGetCollections().then(r => setCollections);
-        } else if (getCurrentUser()) {
-            handleGetCollections().then(r => setCollections);
-        }
-        pageNumber = '0';
-        handleGetCollections().then(r => setCollections);
+        handleGetCollections().then(() => setCollections);
 
     }, []);
 

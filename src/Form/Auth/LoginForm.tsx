@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Form, Button, Container, Alert, Modal, Card} from 'react-bootstrap';
+import {Form, Button, Modal} from 'react-bootstrap';
 import {login} from "../../Service/auth.service";
 
 
@@ -7,7 +7,6 @@ const LoginForm = () => {
 
     const [show, setShow] = useState(true);
     const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
     const [loading, setLoading] = useState<boolean>(false);
     const [message, setMessage] = useState<string>("");
 
